@@ -55,12 +55,25 @@ nav{
 }
 
 .carImg{
-    max-width: 460px;
+    max-height: 350px;
 }
 
-.bannerText{
+.carouselText{
+    font-size: 1.25rem;
+}
+
+.carPar{
+    max-width: 400px;
+}
+
+/*
+media query?? for products description on carousel
+display:none;
+*/
+
+.BannerText{
     color: black;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: 'Fraunces', sans-serif;
 }
 
@@ -68,15 +81,39 @@ nav{
     max-width: 190px;
 }
 
+.storyMain, .buyMain{
+    max-height: 500px;
+}
+
+.storyP, .buyP{
+    max-width: 450px;
+}
+
+#focus{
+    font-family: 'Fraunces', sans-serif;
+    font-size: 1.25rem;
+    max-width: 500px;
+}
+
 .productsColorBanner{
     height: 3.5rem;
 }
 
-/*
 .productsPageImg{
-
+    max-height: 350px;
 }
-*/
+
+.prodPar{
+    max-width: 500px;
+}
+
+.aboutPar{
+    max-width: 600px;
+}
+
+.aboutImg{
+    max-height: 500px;
+}
 
 footer{
     color: black;
