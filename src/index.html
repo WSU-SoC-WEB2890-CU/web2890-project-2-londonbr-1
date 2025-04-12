@@ -3,25 +3,195 @@
 
 <head>
   <meta charset="utf-8">
-  <title>WEB 2890 - Project 2</title>
+  <title>Roonie's Ice Cream</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index,follow">
   <meta name="description" content="TODO: Project 2 ...">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./stylesheets/main.scss">
 </head>
 
 <body>
-  <!-- Your HTML goes here -->
-  <h1 class="display-2 text-center my-5 py-5">
-    <span class="d-block py-5 mt-5">
-      <i class="bi bi-filetype-html text-primary"></i> / 
-      <i class="bi bi-filetype-css text-danger"></i> / 
-      <i class="bi bi-filetype-js text-success"></i>
-    </span>
+
+  <nav class="navbar navbar-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/RooniesNewText.png" alt="Roonie's Logo" height="50">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link dropdown-toggle" href="products.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Products
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="products.html">All Products</a></li>
+              <li><a class="dropdown-item" href="products.html#iceCreamBars">Ice Cream bars</a></li>
+              <li><a class="dropdown-item" href="products.html#iceCreamSand">Ice Cream Sandwhiches</a></li>
+              <li><a class="dropdown-item" href="products.html#iceCreamCup">Ice Cream Cups</a></li>
+              <li><a class="dropdown-item" href="products.html#3bbox">Three Bar Boxes</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="products.html#toBuy">Where to Buy</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutUs.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <div id="hero" class="container align-items-center">
+      <img src="images/rooniesMain.png" alt="Roonie's Logo with ice cream bar" class="img-fluid">
+    </div>
+
+    <section id="productsCarousel" class=" pb-5">
+      <h2 class="p-5 text-center">Products</h2>
+      <div id="carouselExampleCaptions" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner pb-5">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
+                <div class="col d-flex justify-content-center">
+                  <img src="images/icBar.jpg" class="d-block w-100v carImg img-fluid" alt="Cookies and cream Roonie's ice cream bar surrounded by crushed cookie bits">
+                </div>
+                <div class="col d-flex justify-content-center pt-5">
+                  <p class="carPar">Roonies Ice Cream offers ice cream bars in five flavors. We start with a local dairy who provides our own ice cream recipe, then churn into delicious ice cream, hand dip the ice cream bars in a high quality chocolate, and finish with a festive chocolate drizzle.</p>
+                </div>
+              </div>
+            </div>
+            <p class="carouselText pt-5 text-center">Ice Cream Bars</p>
+          </div>
+
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
+                <div class="col d-flex justify-content-center">
+                  <img src="images/icSandwhich.png" class="d-block w-100v carImg img-fluid" alt="two Roonie's ice cream sandwhiches. top sandwhich has chocolate cookies and vanilla ice cream with sprinkles. bottom sandwhich has chocolate chip cookies with cookie dough ice cream">
+                </div>
+                <div class="col d-flex justify-content-center pt-5">
+                  <p class="carPar">Each ice cream sandwich is meticulously crafted, starting with our high-quality 14% butterfat ice cream, churned slowly to achieve the perfect creamy texture. The ice cream is then paired with a scrumptious cookie, creating a harmonious combination of flavors. For an added touch of decadence, we finish our ice cream sandwiches with a delicate chocolate drizzle or a roll of sprinkles.</p>
+                </div>
+              </div>
+            </div>
+            <p class="carouselText pt-5 text-center">Ice Cream Sandwhiches</p>
+          </div>
+
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
+                <div class="col d-flex justify-content-center">
+                  <img src="images/icCup.jpg" class="d-block w-100v carImg img-fluid" alt="Roonie's Java Chip ice cream cup, open with a wooden spoon stuck in top">
+                </div>
+                <div class="col d-flex justify-content-center pt-5">
+                  <p class="carPar">Packaged conveniently in 5oz cups with a spoon in the lid, choose from the rich and satisfying Java Chip, cool and refreshing Mint Chip, the exotic and creamy Horchata, the timeless Cookies 'n Cream, the delectable Cookie Dough, or the indulgent Salted Caramel, this collection of Roonies ice cream flavors offers a delightful array of options to please every palate.</p>
+                </div>
+              </div>
+            </div>
+            <p class="carouselText pt-5 text-center">Ice Cream Cups</p>
+          </div>
+
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
+                <div class="col d-flex justify-content-center">
+                  <img src="images/3BarBox.webp" class="d-block w-100v carImg img-fluid" alt="Five boxes of Roonie's ice cream bars">
+                </div>
+                <div class="col d-flex justify-content-center pt-5">
+                  <p class="carPar">3-Bar Boxes are offered with a multi-pack of our best flavors; strawberry mint chip, and cookies 'n cream. Also available is a 3-pack of strawberry, mint chip, cookies 'n cream, and vanilla ice cream bars.</p>
+                </div>
+              </div>
+            </div>
+            <p class="carouselText pt-5 text-center">3-bar boxes</p>
+          </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <div class="bg-secondary pinkBanner">
+      <div class="container text-center p-5">
+        <div class="row row-cols-2 row-cols-sm-2  row-cols-md-2 row-cols-lg-4">
+          <div class="col"><img class="UOLogo" src="images/UtahsOwn.png" alt="Utah's Own logo"></div>
+          <div class="col"><p class="BannerText">WOMAN OWNED</p></div>
+          <div class="col"><p class="BannerText">LOCAL DAIRY</p></div>
+          <div class="col"><p class="BannerText">HAND-CRAFTED</p></div>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <h2 class="text-center p-5">Our Story</h2>
+      <div class="container-fluid">
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2">
+          <div class="col d-flex justify-content-center">
+            <img src="images/TruckStacy.jpg" class="storyMain img-fluid" alt="Owner of Roonie's Ice Cream, Stacy, standing in front of a very colorful Roonie's truck.">
+          </div>
+          <div class="col">
+            <div class="d-flex justify-content-center">
+              <p class="storyP pt-5">
+                During the COVID-19 pandemic, Stacy Harfert and her sons began crafting unique ice cream bars to sell at local events, noticing a gap in the market for vibrant flavors and designs. Drawing from her background in product development, Stacy infused her all-natural vanilla ice cream with colorful chocolate drizzles, creating the distinct Roonies ice cream bars.
+              </p>
+            </div>
+            <div class="d-flex justify-content-center">
+              <a href="contact.html"><button type="button" class="btn btn-warning">Contact Us</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pb-5">
+      <h2 class="text-center p-5">Where To Buy</h2>
+      <div class="container-fluid">
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2">
+          <div class="col d-flex justify-content-center">
+            <p class="buyP">
+              We're proud to partner with distribution companies such as <a href="https://cdwww.cottonwooddistribution.com/">Cottonwood Distribution</a>, <a href="https://www.nicholasandco.com/">Nicholas & Co</a>, and <a href="http://www.gemstatedist.com/">Gem State Distributors</a> in Utah, Idaho and Nevada.
+
+              You can also find us selling at American First Stadium, home of the REAL Salt Lake and Royals soccer.
+            </p>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <video src="images/RooniesGif.MP4" class="object-fit-fill buyMain pt-5" autoplay loop controls></video>
+          </div>
+        </div>
+      </div>
+    </section>
     
-    Project 2: A multiple-page project of your choosing.
-  </h1>
+  </main>
+
+  <footer>
+    <p>Copyright © 2024 Roonie's Ice Cream - All Rights Reserved.</p>
+  </footer>
 
   <script type="module" src="./javascripts/main.js"></script>
 </body>
