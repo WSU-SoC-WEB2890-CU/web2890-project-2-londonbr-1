@@ -15,9 +15,11 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-dark navbar-expand-lg bg-body-tertiar" data-bs-theme="dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html"></a>
+      <a class="navbar-brand" href="index.html">
+        <img src="images/RooniesNewText.png" alt="Roonie's Logo" height="50">
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -27,10 +29,24 @@
             <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="products.html">Products</a>
+            <a class="nav-link dropdown-toggle" href="products.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Products
+             </a>
+             <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="products.html">All Products</a></li>
+               <li><a class="dropdown-item" href="products.html#iceCreamBars">Ice Cream bars</a></li>
+               <li><a class="dropdown-item" href="products.html#iceCreamSand">Ice Cream Sandwhiches</a></li>
+               <li><a class="dropdown-item" href="products.html#iceCreamCup">Ice Cream Cups</a></li>
+               <li><a class="dropdown-item" href="products.html#3bbox">Three Bar Boxes</a></li>
+               <li><hr class="dropdown-divider"></li>
+               <li><a class="dropdown-item" href="products.html#toBuy">Where to Buy</a></li>
+             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="aboutUs.html">About Us</a>
+            <a class="nav-link active" aria-current="page" href="aboutUs.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
           </li>
         </ul>
       </div>
@@ -38,55 +54,82 @@
   </nav>
 
   <main>
-    <section>
-      <div id="heroAbout">
-        <img src="images/TruckStacy.jpg" alt="Owner of Roonie's Ice Cream, Stacy, standing in front of a very colorful Roonie's truck.">
-      </div>
-    </section>
 
-    <div>
-      <h2 class="text-center">About Us</h2>
-        <div class="container">
-          <div class="row row-cols-1">
-            <div class="col d-flex justify-content-center p-5">
-              <p class="aboutPar">During the COVID-19 pandemic, Stacy Harfert and her sons began crafting unique ice cream bars to sell at local events, noticing 
-                a gap in the market for vibrant flavors and designs. Drawing from her background in product development, Stacy infused her 
-                all-natural vanilla ice cream with colorful chocolate drizzles, creating the distinct Roonies ice cream bars. 
+    <h2 class="text-center p-5">About Us</h2>
+
+        <div class="container p-5">
+          <h3 class="text-center p-3">Our Story</h3>
+          <div class="row row-cols-1 row-cols-lg-2 row-cols-sm-1 row-cols-md-1">
+            <div class="col d-flex justify-content-center p-3">
+              <img src="images/TruckStacy.jpg" class="img-fluid aboutImg">
+            </div>
+            <div class="col d-flex justify-content-center p-3">
+              <p class="aboutPar">During the COVID-19 pandemic, Stacy Harfert and her sons began crafting unique ice cream bars to sell at local events, noticing a gap in the market for
+                 vibrant flavors and designs. Drawing from her background in product development, Stacy infused her all-natural vanilla ice cream with colorful chocolate drizzles, creating 
+                 the distinct Roonies ice cream bars. <br> The overwhelming positive response led to the establishment of Roonies Ice Cream, equipped with a commercial kitchen producing over a million bars annually. 
+                 Their products, celebrated for their taste and festive appearance, are now available in numerous convenience stores, event centers, and recreational outlets across Utah. <br> In just three years, Roonies continues to engage 
+                 with local communities through events and their philanthropic efforts cementing their presence as a beloved hometown brand.
               </p>
-            </div>
-            <div class="col d-flex justify-content-center p-5">
-              <img src="images/aboutUs.webp" class="aboutImg img-fluid" alt="Roonie's owner, Stacy, with her two boys and husband at the America First Stadium.">
-            </div>
-            <div class="col d-flex justify-content-center p-5">
-              <p class="aboutPar">
-                The overwhelming positive response led to the establishment of Roonies Ice Cream, equipped with a commercial kitchen producing 
-                over a million bars annually. Their products, celebrated for their taste and festive appearance, are now available in numerous 
-                convenience stores, event centers, and recreational outlets across Utah. 
-              </p>
-            </div>
-            <div class="col d-flex justify-content-center p-5">
-              <img src="images/Stacy2.png" class="aboutImg img-fluid" alt="Roonie's owner, Stacy, crouching down by a Roonie's Ice Cream freezer in the supermarket.">
-            </div>
-            <div class="col d-flex justify-content-center p-5">
-              <p class="aboutPar">
-                In just three years, Roonies continues to engage with local communities through events and their philanthropic efforts cementing 
-                their presence as a beloved hometown brand.
-              </p>
-            </div>
-            <div class="col d-flex justify-content-center p-5">
-              <div class="container">
-                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
-                    <div class="col d-flex justify-content-center">
-                      <button type="button" class="btn btn-warning m-3">Contact Us</button>
-                    </div>
-                    <div class="col d-flex justify-content-center">
-                      <p class="m-3">435 - 565 - 4646</p>
-                    </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
+        
+        <div class="container p-5">
+          <h3 class="text-center p-3">Where to Buy</h3>
+          <div class="row row-cols-1 row-cols-lg-2 row-cols-sm-1 row-cols-md-1">
+            <div class="col d-flex justify-content-center p-3 order-md-2 order-lg-2">
+              <img src="images/RooniesTruck.webp" class="img-fluid aboutImg">
+            </div>
+            <div class="col d-flex justify-content-center p-3 order-md-1 order-lg-1">
+              <p class="aboutPar">
+                We're proud to partner with distribution companies such as <a href="https://cdwww.cottonwooddistribution.com/">Cottonwood Distribution</a>, <a href="https://www.nicholasandco.com/">Nicholas & Co</a>, and <a href="http://www.gemstatedist.com/">Gem State Distributors</a> in Utah, Idaho and Nevada. <br>
+                You can also find us selling at American First Stadium, home of the REAL Salt Lake and Royals soccer.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container p-5">
+          <h3 class="text-center p-3">Private Label</h3>
+          <div class="row row-cols-1 row-cols-lg-2 row-cols-sm-1 row-cols-md-1">
+            <div class="col d-flex justify-content-center p-3">
+              <img src="images/pLabel.webp" class="img-fluid aboutImg">
+            </div>
+            <div class="col d-flex justify-content-center p-3">
+              <p class="aboutPar">
+                This year we are beyond thrilled to partner with Associated Food Stores to bring ice cream novelties to the Red Button brand. <br>
+                Look for us soon at your favorite grocery store!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container p-5">
+          <h3 class="text-center p-3">Roonies Recognizes</h3>
+          <div class="row row-cols-1 row-cols-lg-2 row-cols-sm-1 row-cols-md-1">
+            <div class="col d-flex justify-content-center p-3 order-md-2 order-lg-2">
+              <img src="images/RooniesRecognizes.webp" class="img-fluid aboutImg">
+            </div>
+            <div class="col d-flex justify-content-center p-3 order-md-1 order-lg-1">
+              <p class="aboutPar">
+                An estimated one in eight children in Wasatch County struggle with food insecurity. We believe this is a major problem in our community and we want to make a difference! <br>
+                While most food bank donations include mac ‘n cheese or ramen, we wanted to provide something more nutritious. <br> 
+                The idea came to life with help of the Wasatch High School CAPS program; a recipe was developed, packaging created, and the first donations were received from friends and family. <br>
+                Roonies Recognizes has since received generous donations and volunteers from our community which allows us to make a continued impact.
+              </p>
+            </div>
+          </div>
+        </div>
+
+    <div class="container p-5">
+      <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
+          <div class="col d-flex justify-content-center">
+            <a href="contact.html"><button type="button" class="btn btn-warning m-3">Contact Us</button></a>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <p class="m-3">435 - 565 - 4646</p>
+          </div>
+      </div>
     </div>
     
   </main>

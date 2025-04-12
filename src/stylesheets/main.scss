@@ -46,7 +46,7 @@ nav{
 }
 
 #heroNeon > img{
-    max-width: 75vw;
+    max-width: 45vw;
 }
 
 #heroAbout > img{
@@ -108,11 +108,23 @@ display:none;
 }
 
 .aboutPar{
-    max-width: 600px;
+    max-width: 500px;
 }
 
 .aboutImg{
-    max-height: 500px;
+    max-height: 400px;
+}
+
+.contactImg{
+    max-width: 500px;
+}
+
+form{
+    max-width: 400px;
+}
+
+.messageText{
+    max-height: 200px;
 }
 
 footer{

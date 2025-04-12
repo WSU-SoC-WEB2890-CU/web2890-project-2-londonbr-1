@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Roonie's Ice Cream</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="TODO: Project 2 ...">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./stylesheets/main.scss">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/RooniesNewText.png" alt="Roonie's Logo" height="50">
+          </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link dropdown-toggle" href="products.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Products
+             </a>
+             <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="products.html">All Products</a></li>
+               <li><a class="dropdown-item" href="products.html#iceCreamBars">Ice Cream bars</a></li>
+               <li><a class="dropdown-item" href="products.html#iceCreamSand">Ice Cream Sandwhiches</a></li>
+               <li><a class="dropdown-item" href="products.html#iceCreamCup">Ice Cream Cups</a></li>
+               <li><a class="dropdown-item" href="products.html#3bbox">Three Bar Boxes</a></li>
+               <li><hr class="dropdown-divider"></li>
+               <li><a class="dropdown-item" href="products.html#toBuy">Where to Buy</a></li>
+             </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="aboutUs.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <h2 class="text-center p-5">Contact Us</h2>
+
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2">
+            <div class="col p-5 d-flex justify-content-center">
+                <img src="images/RooniesNeon.jpg" class="img-fluid contactImg">
+            </div>
+            <div class="col p-5">
+                <form>
+                    <div class="mb-3">
+                        <label for="nameInput" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="nameInput" aria-describedby="nameInput">
+                      </div>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email Address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                      <label for="messageText" class="form-label">Message</label>
+                      <input type="text" class="form-control" id="messageText">
+                    </div>
+                    <button type="submit" class="btn btn-secondary">Submit</button>
+                  </form>
+            </div>
+        </div>
+    </div>
+    <P></P>
+
+    
+  </main>
+
+  <footer>
+    <p>Copyright © 2024 Roonie's Ice Cream - All Rights Reserved.</p>
+  </footer>
+
+  <script type="module" src="./javascripts/main.js"></script>
+</body>
+</html>
